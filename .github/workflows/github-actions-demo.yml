@@ -1,4 +1,4 @@
-name: github-actions-demo
+name: test
 on: [push]
 jobs:
   Explore-GitHub-Actions:
@@ -10,4 +10,4 @@ jobs:
       - run: cd build
       - run: cmake ${{ github.workspace }}
       - run: cmake --build .
-      - run: ./Debug/SettingUpGoogleTest.exe
+      - run: ./Debug/test.exe
